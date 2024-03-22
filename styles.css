@@ -82,3 +82,37 @@ body {
    
   }
 }
+@media only screen and (max-width: 767px) {
+  /* Define a largura máxima da tela */
+  .principal {
+    display: flex;
+    flex-direction: column;
+  }
+  .artigo {
+    width: 100%;
+  }
+  .pesquisa {
+    order: 2; /* Muda a ordem para aparecer após os artigos */
+    width: 100%;
+    margin-top: 20px; /* Adiciona margem acima da pesquisa */
+    padding: 20px;
+  }
+}
+
+/* Estilos para telas maiores (desktop) */
+@media only screen and (min-width: 768px) {
+  /* Mantém a configuração original */
+  .pesquisa {
+    float: right;
+    width: 30%; /* Largura do aside de pesquisa */
+    margin-left: 20px;
+    padding: 20px;
+  }
+  .artigo {
+    width: 65%; /* Largura do conteúdo principal */
+    float: left;
+  }
+  .principal {
+    overflow: hidden; /* Limpa o float */
+  }
+}
