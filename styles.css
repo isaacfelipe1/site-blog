@@ -75,7 +75,7 @@ body {
     padding: 20px; /* Define o preenchimento */
   }
   .principal {
-    padding: 20px; /* Define o preenchimento */
+    padding: 0; /* Define o preenchimento */
   }
   .artigo {
     width: 100%; /* Define a largura desejada para o conteúdo principal */
@@ -97,6 +97,9 @@ body {
     margin-top: 20px; /* Adiciona margem acima da pesquisa */
     padding: 20px;
   }
+  .´principal{
+    padding: 0;
+  }
 }
 
 /* Estilos para telas maiores (desktop) */
@@ -114,5 +117,6 @@ body {
   }
   .principal {
     overflow: hidden; /* Limpa o float */
+
   }
 }

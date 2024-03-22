@@ -3,3 +3,11 @@
     /* margin-top: auto; */ /* Comentado para não ser aplicado: Define a margem superior automática, o que pode ser útil para centralizar verticalmente o elemento */
     /* background-color: #f9f9f9;  */
 }
+
+@media only screen and (max-width: 767px) {
+    .principal {
+        padding: 0;
+    }
+}
+/* }
+ */
