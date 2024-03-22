@@ -49,31 +49,36 @@ body {
 .pesquisa ul li a:hover {
     color: chocolate; /* Define a cor do texto  ao passar o mouse */
 }
-@media only screen and (min-width: 768px) {  /* Define a largura mínima da tela */
-    .pesquisa {
-      float: right;
-      width: 30%; /* Define a largura desejada para o aside */
-      margin-left: 20px; /* Adiciona margem à esquerda para separá-lo do conteúdo principal */
-    }
-    .principal {
-      overflow: hidden; /* Remove o preenchimento interno */
-    }
-    .artigo{
-        width: 65%; /* Define a largura desejada para o conteúdo principal */
-    }
+/* Estilos para telas maiores */
+@media only screen and (min-width: 768px) {
+  /* Define a largura mínima da tela */
+  .pesquisa {
+    float: right;
+    width: 30%; /* Define a largura desejada para o aside */
+    margin-left: 20px; /* Adiciona margem à esquerda para separá-lo do conteúdo principal */
   }
-  /* Estilos para telas menores */
-@media only screen and (max-width: 767px) {  /* Define a largura máxima da tela */
-     .pesquisa {
-      width: 100%; /* Define a largura desejada para o aside */
-      margin-bottom: 20px; /* Adiciona margem abaixo do conteúdo principal */
-      padding: 20px; /* Define o preenchimento */
-      
-    }
-    .principal {
-      padding: 20px; /* Define o preenchimento */
-    }
-    .artigo{
-        width: 100%; /* Define a largura desejada para o conteúdo principal */
-    }
+  .principal {
+    overflow: hidden; /* Remove o preenchimento interno */
   }
+  .artigo {
+    width: 65%; /* Define a largura desejada para o conteúdo principal */
+  }
+}
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 767px) {
+  /* Define a largura máxima da tela */
+  .pesquisa {
+    float: none; /* Remove o float para dispositivos móveis */
+    width: 100%; /* Define a largura desejada para o aside */
+    margin-bottom: 20px; /* Adiciona margem abaixo do conteúdo principal */
+    padding: 20px; /* Define o preenchimento */
+  }
+  .principal {
+    padding: 20px; /* Define o preenchimento */
+  }
+  .artigo {
+    width: 100%; /* Define a largura desejada para o conteúdo principal */
+   
+  }
+}
