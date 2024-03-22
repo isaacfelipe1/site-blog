@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/css/form.css">
     <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/footer.css"> <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="css/article.css"> <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="css/btn_pesquisa.css"> <!-- Link para o arquivo CSS -->
 </head>
 <body>
-    <header>
-        <a href="/index.html"><img src="/img/L.png" alt="Logo do Blog de Jogos Educacionais" width="200px"></a> 
-        <nav>
+    <header class="cabecalho">
+        <a href="/"><img src="/img/logo.png" alt="Logo do Blog de Jogos Educacionais" width="200px"></a> 
+        <nav class="navegacao">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -19,10 +24,27 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-        <article>
-            <img src="img/artigo 2.1.jpg" alt="Imagem de crianças brincando" class="tamanho-imagem">
+    <section class="principal">
+        <aside class="pesquisa">
+            <input type="search" name="search" id=" search" placeholder="Pesquisar Artigo" class="search" > <!-- Campo de pesquisa -->
+           <button class="btn"><span>Pesquisar</span></button> <!-- Botão de pesquisa -->
+            <h2>Artigos Populares</h2>
+            <ul>
+                <li><a href="/artigo1.html">Jogos Educacionais: Transformando o Aprendizado em Diversão</a></li>
+                <li><a href="/artigo3.html">Jogos Educacionais: Uma Ferramenta Promissora no Ensino Remoto</a></li>
+                <li><a href="/artigo2.html">A Importância dos Jogos Educacionais no Desenvolvimento Infantil</a></li>
+            </ul>
+            <h2>Tags</h2>
+        <ul >
+            <li><a href="https://escolakids.uol.com.br/" target="_blank" >Educação</a></li>
+            <li><a href="https://www.escolagames.com.br/" target="_blank" >Jogos</a></li>
+            <li><a href="https://www.napratica.org.br/aprendizado-continuo-mentalidade/" target="_blank" >Aprendizado</a></li>
+            <li><a href="https://www.tecmundo.com.br/" target="_blank" >Tecnologia</a></li>
+            <li><a href="https://escolabrasileiradegames.com.br/course/desenvolvimento-jogos-educativos" target="_blank" >Desenvolvimento</a></li>
+        </ul>
+        </aside>
+        <article class="artigo">
+            <img src="img/artigo2.jpg" alt="Imagem de crianças brincando" class="tamanho-imagem">
             <h2>A Importância dos Jogos Educativos no Desenvolvimento Infantil.</h2>
             <p>
                 Nos dias de hoje, a tecnologia desempenha um papel cada vez mais significativo 
@@ -71,38 +93,26 @@
                     investindo em jogos educativos e integrá-los de forma eficaz na educação infantil, garantindo um 
                     futuro brilhante para as gerações vindouras.
                 </p>
-            <form action="#" method="POST" class="responder-form">
-                <h3>Deixar Comentário</h3>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-                <button type="submit">Enviar Resposta</button>
-            </form>
         </article>
-    </main>
-    <aside>
-        <h2>Artigos Populares</h2>
-        <ul>
-            <li><a href="/artigo1.html">Jogos Educacionais: Transformando o Aprendizado em Diversão</a></li>
-            <li><a href="/artigo3.html">Jogos Educacionais: Uma Ferramenta Promissora no Ensino Remoto</a></li>
-            <li><a href="/artigo2.html">A Importância dos Jogos Educacionais no Desenvolvimento Infantil</a></li>
-        </ul>
-        <h2>Tags</h2>
-    <ul class="tags">
-        <li><a href="https://escolakids.uol.com.br/">Educação</a></li>
-        <li><a href="https://www.escolagames.com.br/">Jogos</a></li>
-        <li><a href="https://www.napratica.org.br/aprendizado-continuo-mentalidade/">Aprendizado</a></li>
-        <li><a href="https://www.tecmundo.com.br/">Tecnologia</a></li>
-        <li><a href="https://escolabrasileiradegames.com.br/course/desenvolvimento-jogos-educativos">Desenvolvimento</a></li>
-    </ul>
-    </aside>
-    <footer>
+        <article class="artigo">
+            <div class="container">
+                <form action="#" method="POST" class="responder-form">
+                    <h3>Deixar Comentário</h3>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+                    <button type="submit" class="button"><span>Enviar Comentário</span></button>
+                </form>
+            </div>
+        </article>
+    </section>
+    <footer class="rodape">
         <p>&copy; 2024 Blog de Jogos Educacionais. Todos os direitos reservados.</p>
     </footer>
 </body>

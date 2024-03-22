@@ -1,154 +1,79 @@
 /* Reset de Estilos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o preenchimento padrão do body */
+    box-sizing: border-box; /* Remove o preenchimento padrão do body */
 }
-
 /* Estilos Globais */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f7f7f7;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1px;
-    position: fixed;
-    width: 100%;
-}
-header h1 {
-    margin: 0;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    line-height: 1.6; /* Define a altura da linha do texto */
+    background-color: #f7f7f7; /* Define a cor de fundo */
+    color: #333; /* Define a cor do texto */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o preenchimento padrão do body */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-nav ul li a:hover{
-    color: #ffc107;
-    transition: all 0.2s ease-in-out;
-    text-decoration: underline;
-   
-  }
-main {
-    padding: 70px;
-    /* margin-top: auto; */
-    /* background-color: #ffc107bf; */
-}
-article {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-article h2 {
-    color: #333;
-}
-article p {
-    margin-bottom: 10px;
-}
-
-article a {
-    color: #333;
-    text-decoration: none;
-    display: inline-block;
-    background-color: #eee;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-article a:hover {
-    background-color: #ccc;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+.pesquisa{
+    float: right; /* Define a posição */
+    display: flexbox; /* Define o preenchimento */
+    /* flex-direction: column; */
+    align-items: center; /* Centraliza o conteúdo */
+    /* background-color: #ffffffe9; Define a cor de fundo */
+    padding: 20px;  /* Define o preenchimento */
+    border-radius: 5px; /* Define o arredondamento */
     /* position: fixed; */
-    bottom: 0;
-    width: 100%;
+   
 }
-
-aside {
-    background-color: #f3f3f3;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+.pesquisa h2{
+        color: #333;    /* Define a cor do texto */ 
     
 }
-
-aside h2 {
-    margin-bottom: 10px;
-    color: #333;
+.pesquisa ul {
+    list-style-type: none; /* Remove o estilo da lista */
+    padding: 0; /* Remove o preenchimento */
+    margin-top: 10px; /* Define o preenchimento */
 }
-
-aside ul {
-    list-style-type: none;
-    padding: 0;
+.pesquisa ul li {
+    margin-bottom: 5px; /* Define o preenchimento */
 }
-
-aside ul li {
-    margin-bottom: 10px;
+.pesquisa ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #333; /* Define a cor do texto */
+    /* background-color: #ddd; Define a cor de fundo */
+    padding: 5px 10px; /* Define o preenchimento */
+    border-radius: 5px; /* Define o arredondamento */
+    display: inline-block; /* Define o preenchimento */
+    /* border: #333 1px solid; */
 }
-
-aside ul li a {
-    text-decoration: none;
-    color: #555;
+.pesquisa ul li a:hover {
+    color: chocolate; /* Define a cor do texto  ao passar o mouse */
 }
-aside ul li a:hover {
-    text-decoration: underline;
-    color: #ffc107;
-}
-article img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px; /* Adiciona um espaço entre a imagem e o conteúdo do artigo */
-}
-aside {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-aside h2 {
-    color: #333;
-}
-
-aside ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-}
-aside ul li {
-    margin-bottom: 5px;
-}
-
-aside ul li a {
-    text-decoration: none;
-    color: #333;
-    background-color: #ddd;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
-}
-aside ul li a:hover {
-    background-color: #ccc;
-}
+@media only screen and (min-width: 768px) {  /* Define a largura mínima da tela */
+    .pesquisa {
+      float: right;
+      width: 30%; /* Define a largura desejada para o aside */
+      margin-left: 20px; /* Adiciona margem à esquerda para separá-lo do conteúdo principal */
+    }
+    .principal {
+      overflow: hidden; /* Remove o preenchimento interno */
+    }
+    .artigo{
+        width: 65%; /* Define a largura desejada para o conteúdo principal */
+    }
+  }
+  /* Estilos para telas menores */
+@media only screen and (max-width: 767px) {  /* Define a largura máxima da tela */
+     .pesquisa {
+      width: 100%; /* Define a largura desejada para o aside */
+      margin-bottom: 20px; /* Adiciona margem abaixo do conteúdo principal */
+      padding: 20px; /* Define o preenchimento */
+      
+    }
+    .principal {
+      padding: 20px; /* Define o preenchimento */
+    }
+    .artigo{
+        width: 100%; /* Define a largura desejada para o conteúdo principal */
+    }
+  }

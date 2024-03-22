@@ -1,4 +1,18 @@
-.tamanho-imagem{
-    width: 400px;
-    border-radius: 15px;
+.tamanho-imagem {
+    width: 400px; /* Define a largura da imagem como 400 pixels */
+    border-radius: 15px; /* Adiciona um raio de borda de 15 pixels para arredondar os cantos da imagem */
+    cursor: pointer;
+
+}
+.tamanho-imagem:hover{
+    opacity: 0.8; /* Define a opacidade da imagem como 80% */
+    transition: 0.4s; /* Adiciona um efeito de transição de 0.3 segundos */
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+    border-radius: 15px; /* Adiciona um raio de borda de 15 pixels para arredondar os cantos da imagem */
+    /* cursor: pointer; */
+    /* //coloque bordas  */
+    border: 1px solid #ccc; /* Adiciona uma borda de 1 pixel sólida com a cor #ccc */
+    
+
+
 }

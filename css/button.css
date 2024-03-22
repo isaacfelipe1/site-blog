@@ -1,26 +1,29 @@
-.button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    cursor: pointer;
-    content: '\00bb';
-    display: inline-block;
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+.button span {  
+  cursor: pointer;  /* Define o tipo de cursor */ 
+  display: inline-block;  /* Define o preenchimento */
+  position: relative;  /* Define a posição */
+  transition: 0.5s; /* Define o tempo de transição */
+  padding: 15px;
+}
+/* Pseudo-elemento ::after do elemento com a classe .button span */
+.button span:after { 
+  cursor: pointer; /* Define o tipo de cursor */
+  content: '\00bb'; /* Define o conteúdo do pseudo-elemento como uma seta dupla direita */
+  display: inline-block; /* Define o pseudo-elemento como um bloco em linha */
+  position: absolute; /* Define a posição absoluta em relação ao elemento pai */
+  opacity: 0; /* Define a opacidade inicial como zero, tornando o pseudo-elemento invisível */
+  top: 0; /* Define a distância do topo em relação ao elemento pai como zero */
+  right: -20px; /* Define a distância da borda direita em relação ao elemento pai como -20 pixels */
+  transition: 0.5s; /* Define o tempo de transição */
+  padding: 15px;
+}
+/* Quando o cursor está sobre o elemento .button span */
+.button:hover span {
+  padding-right: 25px; /* Adiciona preenchimento à direita do elemento */
+}
+
+/* Quando o cursor está sobre o pseudo-elemento ::after do elemento .button span */
+.button:hover span:after {
+  opacity: 1; /* Torna o pseudo-elemento visível */
+  right: 0; /* Move o pseudo-elemento para a posição inicial (direita) */
+}

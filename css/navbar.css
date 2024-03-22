@@ -1,0 +1,36 @@
+/* Estilos para o cabeçalho */
+.cabecalho {
+    background-color: #333; /* Define a cor de fundo como #333 */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 20px; /* Adiciona um preenchimento de 1 pixel */
+    
+}
+/* Estilos para o título dentro do cabeçalho */
+.cabecalho h1 {
+    margin: 0; /* Remove as margens padrão do título */
+}
+
+/* Estilos para a navegação */
+.navegacao ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilos para os itens da lista de navegação */
+.navegacao ul li {
+    display: inline; /* Exibe os itens em linha (na mesma linha horizontal) */
+    margin-right: 20px; /* Adiciona uma margem à direita de 20 pixels */
+    margin-left: 5px; /* Adiciona uma margem à esquerda de 5 pixels */
+}
+/* Estilos para os links na lista de navegação */
+.navegacao ul li a {
+    text-decoration: none; /* Remove a decoração de texto (sublinhado) dos links */
+    color: #fff; /* Define a cor do texto como branco */
+    text-transform: uppercase;
+}
+/* Estilos para os links na lista de navegação quando em hover */
+.navegacao ul li a:hover {
+    color: #ffc107; /* Define a cor do texto como amarelo quando em hover */
+    transition: all 0.2s ease-in-out; /* Adiciona uma transição suave de 0.2 segundos para todas as propriedades */
+    text-decoration: underline; /* Adiciona um sublinhado quando em hover */
+}

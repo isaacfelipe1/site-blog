@@ -1,0 +1,5 @@
+.principal {
+    padding: 70px; /* Adiciona um preenchimento interno de 70 pixels em todos os lados do elemento com a classe .principal */
+    /* margin-top: auto; */ /* Comentado para não ser aplicado: Define a margem superior automática, o que pode ser útil para centralizar verticalmente o elemento */
+    /* background-color: #f9f9f9;  */
+}

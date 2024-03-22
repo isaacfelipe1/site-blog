@@ -1,0 +1,35 @@
+.artigo {
+    background-color: #fff;  /* Define a cor de fundo */
+    padding: 20px; /* Define o preenchimento */
+    margin-bottom: 20px; /* Define o preenchimento */
+    border-radius: 5px; /* Define o arredondamento */
+    /* width: 65%; */
+}
+.artigo h2 {
+    color: #333; /* Define a cor do texto */
+    font-size: 16pt; /* Define o tamanho da fonte */
+    margin-bottom: 10px; /* Define o preenchimento */
+    text-transform: uppercase; /* Transforma o texto em maiúsculo */
+}
+.artigo p {
+    margin-bottom: 10px; /* Define o preenchimento */
+    text-align: justify; 
+}
+
+.artigo a {
+    color: #333; /* Define a cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-block; /* Define o preenchimento */
+    background-color: #eee;     /* Define a cor de fundo */
+    border-radius: 5px; /* Define o arredondamento */
+}
+.artigo a:hover {
+    background-color: #ccc; /* Define a cor de fundo ao passar o mouse */
+}
+
+.artigo img {
+    max-width: 100%; /* Define a largura maxima da imagem */
+    height: auto; /* Define a altura da imagem */
+    display: block; /* Define o preenchimento */
+    margin-bottom: 10px; /* essa atributo Adiciona um espaço entre a imagem e o conteúdo do artigo */
+} 

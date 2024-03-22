@@ -2,14 +2,20 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Jogos Educacionais</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Blog de Jogos Educacionais</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="/css/navbar.css"> 
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/footer.css"> <!-- Link para o arquivo CSS --> 
+    <link rel="stylesheet" href="css/article.css"> <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="css/btn_pesquisa.css"> <!-- Link para o arquivo CSS -->
+
 </head>
 <body>
-    <header>
-        <a href="/index.html"><img src="/img/L.png" alt="Logo do Blog de Jogos Educacionais" width="200px"></a> 
-        <nav>
+    <header class="cabecalho">
+        <a href="/index.html"><img src="/img/logo.png" alt="Logo do Blog de Jogos Educacionais" width="200px"></a> 
+        <nav class="navegacao">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -17,16 +23,35 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-        <article>
-            <h2>Sobre</h2>
+    <section class="principal">
+        
+        <aside class="pesquisa">
+            <input type="search" name="search" id=" search" placeholder="Pesquisar Artigo" class="search" > <!-- Campo de pesquisa -->
+           <button class="btn"><span>Pesquisar</span></button> <!-- Botão de pesquisa -->
+            <!-- Barra lateral para pesquisa e tags -->
+            <h2>Artigos Populares</h2>
+            <ul>
+                <li><a href="/artigo1.html">Jogos Educacionais: Transformando o Aprendizado em Diversão</a></li>
+                <li><a href="/artigo3.html">Jogos Educacionais: Uma Ferramenta Promissora no Ensino Remoto</a></li>
+                <li><a href="/artigo2.html">A Importância dos Jogos Educacionais no Desenvolvimento Infantil</a></li>
+            </ul>
+            <h2>Tags</h2>
+        <ul >
+            <li><a href="https://escolakids.uol.com.br/" target="_blank" >Educação</a></li>
+            <li><a href="https://www.escolagames.com.br/" target="_blank" >Jogos</a></li>
+            <li><a href="https://www.napratica.org.br/aprendizado-continuo-mentalidade/" target="_blank" >Aprendizado</a></li>
+            <li><a href="https://www.tecmundo.com.br/" target="_blank" >Tecnologia</a></li>
+            <li><a href="https://escolabrasileiradegames.com.br/course/desenvolvimento-jogos-educativos" target="_blank" >Desenvolvimento</a></li>
+        </ul>
+        </aside>
+        <article class="artigo">
+            <h2 >Sobre</h2>
             <p>Bem-vindo! Somos uma equipe apaixonada por compartilhar conhecimento e inspirar outras pessoas. Neste blog, você encontrará uma variedade de artigos sobre diversos temas, desde tecnologia até dicas de estilo de vida. Nosso objetivo é fornecer conteúdo de qualidade que informe, eduque e entretenha nossos leitores.</p>
             <p>Nossa equipe está empenhada em manter este blog atualizado com novos artigos regularmente. Esperamos que você desfrute da sua visita e encontre informações úteis aqui.</p>
         </article>
-    </main>
+    </section>
 
-    <footer>
+    <footer class="rodape">
         <p>&copy; 2024 Blog de Jogos Educacionais. Todos os direitos reservados.</p>
     </footer>
 </body>

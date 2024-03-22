@@ -1,0 +1,24 @@
+/* Estilos para o campo de pesquisa */
+.search {
+    width: 100%; /* Define a largura como 100% */
+    height: 30px; /* Define a altura como 30 pixels */
+    border-radius: 5px; /* Adiciona um raio de borda de 5 pixels para arredondar os cantos */
+    border: 1px solid #ccc; /* Adiciona uma borda sólida de 1 pixel com cor #ccc */
+    padding: 20px; /* Adiciona preenchimento interno de 20 pixels */
+}
+
+/* Estilos para o botão de pesquisa */
+.btn {
+    width: 100%; /* Define a largura como 100% */
+    height: 30px; /* Define a altura como 30 pixels */
+    border-radius: 5px; /* Adiciona um raio de borda de 5 pixels para arredondar os cantos */
+    border: 1px solid #ccc; /* Adiciona uma borda sólida de 1 pixel com cor #ccc */
+    background-color: #fff; /* Define a cor de fundo como branco */
+    cursor: pointer; /* Define o cursor como apontador */
+    margin-top: 10px; /* Adiciona uma margem superior de 10 pixels */
+}
+
+/* Estilos para o botão de pesquisa quando em hover */
+.btn:hover {
+    background-color: #ccc; /* Define a cor de fundo como cinza claro quando hover */
+}
